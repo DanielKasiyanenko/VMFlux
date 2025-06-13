@@ -1,0 +1,29 @@
+#cloud-config
+
+# Grow partition
+growpart:
+  mode: auto
+  devices: ['/']
+  ignore_growroot_disabled: true
+resize_rootfs: true
+
+# User configuration
+users:
+  - name: daniel
+    lock_passwd: False
+    passwd: $6$5p1lmsXCaC7YYPxY$BGMxROgS9jYcRLHX8SpcYIT.oksHQPPG7wir8M0GohcGZYubAsn7TEFmLtYr0G.EFaktx/MVfAoCbqQdCYHT31
+    gecos: Daniel
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC864Ai0hLY+NGewcZqhy/NG1QQls5r8B2St+gTLvGtP+WWoKqNrVv6AOKDVgQDJRLPqgYFCaQS/YzBtuASFM5/PEUQ51QSWuiXR87VvccDL+2DCfsQajCy0Z70vMqHyH00B6uhZ8sjTmnsnIAkH0sPd75cXJOUSdwsYo+8MwNFt/OfU2wCilYOHzeNskK7UMvS/x+O2gGLEsLKaYOjGFfe9P8u40jl15fiwr4Ne5JOGnECWDoBi8tafXcWt6PT8M/NGohcMrGBsx2oEG5Gq1xm49z/QB11l9GUNZkcDJKJ0n8c2MCLNU+vbdCcBg5yBJJD4mlzNGAlWi9xxVc2Sqrr daniel@fedora
+    groups: [wheel]
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    shell: /bin/bash
+
+# Hostname configuration
+hostname: rhel9
+fqdn: rhel9.example.com
+
+# Remove network settings to use custom ip
+runcmd:
+  - systemctl enable qemu-guest-agent
+  - systemctl start qemu-guest-agent
