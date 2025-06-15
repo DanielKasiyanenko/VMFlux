@@ -38,7 +38,6 @@ This project provides a comprehensive Infrastructure as Code (IaC) solution for 
 - [Contributing](#contributing)
 - [Troubleshooting](#troubleshooting)
 - [Project Background](#project-background)
-- [License](#license)
 - [Acknowledgments](#acknowledgments)
 - [Support](#support)
 
@@ -249,10 +248,6 @@ This project was developed during an internship at Piros NV, a Belgian IT compan
 - Implemented cloud-init with growpart for automatic disk expansion
 - Created dual-platform deployment supporting both libvirt and Proxmox
 - Achieved 92% reduction in deployment time through automation
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
