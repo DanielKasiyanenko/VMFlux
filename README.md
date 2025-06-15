@@ -72,19 +72,19 @@ cd VMFlux
 
 2. **Build RHEL9 image (recommended)**
 ```bash
-cd packer-image-builder-main/rhel9
+cd packer-image-builder/rhel9
 packer build rhel9.pkr.hcl
 ```
 
 3. **Deploy with Terraform**
 ```bash
 # For libvirt/KVM deployment
-cd terraform-vm-builder-main/libvirt
+cd terraform-vm-builder/libvirt
 terraform init
 terraform apply
 
 # For Proxmox deployment
-cd terraform-vm-builder-main/proxmox
+cd terraform-vm-builder/proxmox
 terraform init
 terraform apply
 ```
@@ -93,14 +93,14 @@ terraform apply
 
 ```bash
 VMFlux/
-├── packer-image-builder-main/
+├── packer-image-builder/
 │   ├── rhel9/                          # RHEL9 templates (complete)
-│   │   ├── rhel9.pkr.hcl              # Main Packer template
+│   │   ├── rhel9.pkr.hcl               # Main Packer template
 │   │   ├── http/                       # Kickstart files
 │   │   └── scripts/                    # Post-install scripts
 │   ├── debian/                         # Debian templates (incomplete)
 │   └── opensuse/                       # openSUSE templates (incomplete)
-└── terraform-vm-builder-main/
+└── terraform-vm-builder/
     ├── libvirt/                        # libvirt/KVM deployment
     └── proxmox/                        # Proxmox deployment
 ```
@@ -132,7 +132,7 @@ VMFlux/
 
 **RHEL9 (Production Ready)**
 ```bash
-cd packer-image-builder-main/rhel9
+cd packer-image-builder/rhel9
 # Edit variables as needed
 packer build rhel9.pkr.hcl
 ```
@@ -140,10 +140,10 @@ packer build rhel9.pkr.hcl
 **Development Distributions**
 ```bash
 # These are available but not complete
-cd packer-image-builder-main/debian
+cd packer-image-builder/debian
 packer build debian.pkr.hcl  # May fail - incomplete
 
-cd packer-image-builder-main/opensuse
+cd packer-image-builder/opensuse
 packer build opensuse.pkr.hcl  # May fail - incomplete
 ```
 
@@ -151,7 +151,7 @@ packer build opensuse.pkr.hcl  # May fail - incomplete
 
 **Local Development with libvirt**
 ```bash
-cd terraform-vm-builder-main/libvirt
+cd terraform-vm-builder/libvirt
 terraform init
 terraform plan
 terraform apply
@@ -159,7 +159,7 @@ terraform apply
 
 **Production Deployment with Proxmox**
 ```bash
-cd terraform-vm-builder-main/proxmox
+cd terraform-vm-builder/proxmox
 terraform init
 terraform plan
 terraform apply
