@@ -38,10 +38,11 @@ This project provides a comprehensive Infrastructure as Code (IaC) solution for 
 - [Contributing](#contributing)
 - [Troubleshooting](#troubleshooting)
 - [Project Background](#project-background)
+- [License](#license)
 - [Acknowledgments](#acknowledgments)
 - [Support](#support)
 
-## 🛠️ Prerequisites
+<h2 id="prerequisites">🛠️ Prerequisites</h2>
 
 ### Required Software
 - **Packer** >= 1.9.0
@@ -61,7 +62,7 @@ This project provides a comprehensive Infrastructure as Code (IaC) solution for 
 - Proxmox server access (for production deployment)
 - libvirt daemon running (for local testing)
 
-## 🚀 Quick Start
+<h2 id="quick-start">🚀 Quick Start</h2>
 
 1. **Clone the repository**
 ```bash
@@ -88,7 +89,7 @@ terraform init
 terraform apply
 ```
 
-## 📁 Project Structure
+<h2 id="project-structure">📁 Project Structure</h2>
 
 ```bash
 VMFlux/
@@ -104,7 +105,7 @@ VMFlux/
     └── proxmox/                        # Proxmox deployment
 ```
 
-## 🖥️ Platform Support
+<h2 id="platform-support">🖥️ Platform Support</h2>
 
 ### Production Ready
 - **RHEL9**: Fully operational automation workflow
@@ -125,7 +126,7 @@ VMFlux/
 - ⚠️ Package selection needs refinement
 - ⚠️ Secure Boot integration pending
 
-## 🔧 Usage
+<h2 id="usage">🔧 Usage</h2>
 
 ### Building Images
 
@@ -164,7 +165,7 @@ terraform plan
 terraform apply
 ```
 
-## 🎯 Deployment Targets
+<h2 id="deployment-targets">🎯 Deployment Targets</h2>
 
 ### libvirt/KVM
 - **Use Case**: Local development and testing
@@ -176,7 +177,7 @@ terraform apply
 - **Features**: Web UI integration, enterprise features
 - **Benefits**: High availability, backup integration, monitoring
 
-## 📊 Performance Metrics
+<h2 id="performance-metrics">📊 Performance Metrics</h2>
 
 Achieved performance improvements with the RHEL9 implementation:
 
@@ -185,7 +186,7 @@ Achieved performance improvements with the RHEL9 implementation:
 - **Success Rate**: 100% Secure Boot compliance
 - **Automation Level**: Fully unattended deployment process
 
-## 🔒 Security Features
+<h2 id="security-features">🔒 Security Features</h2>
 
 ### RHEL9 Implementation
 - **Secure Boot**: Enabled by default with UEFI firmware
@@ -194,7 +195,7 @@ Achieved performance improvements with the RHEL9 implementation:
 - **Network Security**: Configurable firewall rules
 - **User Management**: Automated user creation with SSH key deployment
 
-## 🤝 Contributing
+<h2 id="contributing">🤝 Contributing</h2>
 
 Contributions are especially welcome for completing the Debian and openSUSE implementations!
 
@@ -216,7 +217,7 @@ Contributions are especially welcome for completing the Debian and openSUSE impl
 - openSUSE template exists but AutoYaST needs completion
 - Only RHEL9 has been fully tested in production environments
 
-## 🔍 Troubleshooting
+<h2 id="troubleshooting">🔍 Troubleshooting</h2>
 
 ### Common Issues
 
@@ -239,7 +240,7 @@ sudo virsh net-list --all
 sudo virsh net-start default
 ```
 
-## 📚 Project Background
+<h2 id="project-background">📚 Project Background</h2>
 
 This project was developed during an internship at Piros NV, a Belgian IT company specializing in Red Hat open-source solutions. The goal was to create a fully automated VM deployment pipeline that reduces manual intervention and improves security compliance through Secure Boot implementation.
 
@@ -249,6 +250,10 @@ This project was developed during an internship at Piros NV, a Belgian IT compan
 - Created dual-platform deployment supporting both libvirt and Proxmox
 - Achieved 92% reduction in deployment time through automation
 
+<h2 id="license">📄 License</h2>
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
 <h2 id="acknowledgments">🙏 Acknowledgments</h2>
 
 - **Piros NV** for providing the internship opportunity and technical guidance
@@ -257,7 +262,7 @@ This project was developed during an internship at Piros NV, a Belgian IT compan
 - **HashiCorp** for Packer and Terraform tools
 - **Red Hat** for RHEL9 and comprehensive documentation
 
-## 📞 Support
+<h2 id="support">📞 Support</h2>
 
 For questions, issues, or contributions:
 
