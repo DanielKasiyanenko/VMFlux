@@ -7,7 +7,7 @@
 
 > A complete automation workflow for building and deploying secure virtual machines with Secure Boot enabled, developed during an internship at Piros NV. This project reduces VM deployment time from 3 hours to 15 minutes with 100% Secure Boot compliance.
 
-## 🚀## Overview
+<h2 id="overview">🚀 Overview</h2>
 
 This project provides a comprehensive Infrastructure as Code (IaC) solution for automating the creation and deployment of virtual machines across multiple Linux distributions. The workflow combines Packer for image building and Terraform for infrastructure provisioning, specifically designed for enterprise environments requiring Secure Boot compliance and automated deployment pipelines.
 
@@ -36,9 +36,9 @@ This project provides a comprehensive Infrastructure as Code (IaC) solution for 
 - [Performance Metrics](#performance-metrics)
 - [Security Features](#security-features)
 - [Contributing](#contributing)
-- [Troubleshooting](#🔍Troubleshooting)
+- [Troubleshooting](#troubleshooting)
 - [Project Background](#project-background)
-- [Acknowledgments](#Acknowledgments)
+- [Acknowledgments](#acknowledgments)
 - [Support](#support)
 
 ## 🛠️ Prerequisites
@@ -249,7 +249,7 @@ This project was developed during an internship at Piros NV, a Belgian IT compan
 - Created dual-platform deployment supporting both libvirt and Proxmox
 - Achieved 92% reduction in deployment time through automation
 
-## 🙏 Acknowledgments
+<h2 id="acknowledgments">🙏 Acknowledgments</h2>
 
 - **Piros NV** for providing the internship opportunity and technical guidance
 - **Indy Van Mol** (Piros NV) for project mentorship and technical support
