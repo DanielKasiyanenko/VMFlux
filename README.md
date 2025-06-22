@@ -38,7 +38,7 @@ This project provides a comprehensive Infrastructure as Code (IaC) solution for 
 - [Contributing](#contributing)
 - [Troubleshooting](#troubleshooting)
 - [Project Background](#project-background)
-- [Acknowledgments](#acknowledgments)
+- [Acknowledgments](#Acknowledgments)
 - [Support](#support)
 
 ## 🛠️ Prerequisites
