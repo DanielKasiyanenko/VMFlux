@@ -249,7 +249,7 @@ This project was developed during an internship at Piros NV, a Belgian IT compan
 - Created dual-platform deployment supporting both libvirt and Proxmox
 - Achieved 92% reduction in deployment time through automation
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Piros NV** for providing the internship opportunity and technical guidance
 - **Indy Van Mol** (Piros NV) for project mentorship and technical support
