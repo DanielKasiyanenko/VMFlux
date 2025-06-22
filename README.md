@@ -27,7 +27,7 @@ This project provides a comprehensive Infrastructure as Code (IaC) solution for 
 
 ## 📋 Table of Contents
 
-- [Prerequisites](#prerequisites)
+- [Prerequisites](#🛠️Prerequisites)
 - [Quick Start](#quick-start)
 - [Project Structure](#project-structure)
 - [Platform Support](#platform-support)
@@ -36,7 +36,7 @@ This project provides a comprehensive Infrastructure as Code (IaC) solution for 
 - [Performance Metrics](#performance-metrics)
 - [Security Features](#security-features)
 - [Contributing](#contributing)
-- [Troubleshooting](#troubleshooting)
+- [Troubleshooting](#🔍Troubleshooting)
 - [Project Background](#project-background)
 - [Acknowledgments](#Acknowledgments)
 - [Support](#support)
@@ -249,7 +249,7 @@ This project was developed during an internship at Piros NV, a Belgian IT compan
 - Created dual-platform deployment supporting both libvirt and Proxmox
 - Achieved 92% reduction in deployment time through automation
 
-## Acknowledgments
+## 🙏 Acknowledgments
 
 - **Piros NV** for providing the internship opportunity and technical guidance
 - **Indy Van Mol** (Piros NV) for project mentorship and technical support
